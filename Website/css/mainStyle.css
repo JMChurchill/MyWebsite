@@ -1,0 +1,258 @@
+:root{
+    /*--primary: rgb(63,177,206);*/
+    /*--primary: rgb(34,209,238);*/
+    --primary: rgb(32,35,41);
+    --contrast: rgb(231,102,49);
+    --background: rgb(43,46,53);
+    --backgroundLighter: rgb(63,67,78);
+    --backgroundWhite: rgb(226,243,245);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,* ::before, *::after{
+    /*box-sizing: border-box;*/
+    box-sizing: inherit;
+}
+
+/*html,body{*/
+/*    margin: 0;*/
+/*    !*padding: 0;*!*/
+/*    background-color: var(--background);*/
+/*    font-family: Calibri, sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 20px;*/
+/*}*/
+
+body,text{
+    margin-left: 0;
+    margin-right: 0;
+    /*margin-top: 75px;*/
+    /*padding-left: 10px;*/
+    background-color: var(--background);
+    font-family: Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*
+===================
+    NavBar
+===================
+*/
+
+header {
+    background: var(--primary);
+    /*margin-top: -20px;*/
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    /*height: 104px;*/
+    font-size: 15px;
+    top: 0;
+    color: white;
+}
+
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: var(--contrast);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--primary);
+    width: 100%;
+    /*display: none;*/
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    /*color: #393939;*/
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.nav-toggle:checked ~ nav{
+    /*display: block;*/
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*.contents{*/
+/*    margin-top: 75px;*/
+/*    width: 100%;*/
+/*}*/
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+}
+
+.block{
+    position: relative;
+    height: 100vh;
+    outline: black solid 1px;
+    /*padding: 25px 2%;*/
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    padding: 75px 1% 5% 5%;
+    /*padding-top: 75px;*/
+    background-color: var(--background);
+}
+.lighter{
+    width: 100%;
+    height: 100%;
+    padding: 75px 1% 5% 5%;
+
+    /*padding: 1% 5%;*/
+    background-color: var(--backgroundLighter);
+}
+.blockHeader{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+/*large screen*/
+@media screen and (min-width: 1000px) {
+    /*
+ ====================
+        NavBar
+ ====================
+*/
+
+    .nav-toggle-label{
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        font-size: 15px;
+        color: white;
+
+    }
+
+    #logo {
+        grid-column: 2 /3;
+    }
+    nav{
+        /*jump*/
+        transform: scale(1,1);
+        all: unset;
+
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+        position: relative;
+    }
+    nav a{
+        opacity: 1;
+    }
+    nav a::before{
+        content: '';
+        display: block;
+        height: 6px;
+        background: var(--contrast);
+        position: absolute;
+        top: 2.3em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before{
+        transform: scale(1,1);
+    }
+
+}
+
+
