@@ -6,6 +6,7 @@
     --background: rgb(43,46,53);
     --backgroundLighter: rgb(63,67,78);
     --backgroundWhite: rgb(226,243,245);
+    --InactiveSquare: rgb(32,35,41);
 }
 
 html{
@@ -187,7 +188,42 @@ nav a:hover{
     font-size: 4rem;
     margin-top: 1rem;
 }
-
+.scrollBar{
+    /*float: right;*/
+    position: fixed;
+    right: 5vw;
+    top: 25vh;
+    bottom: 25vh;
+    z-index: 9999;
+    outline: 1px solid black;
+}
+.squares{
+    /*height: 234;*/
+    width: 5vh;
+}
+.square{
+    width: 5vh;
+    position: absolute;
+    /*margin-top: 50px;*/
+    /*margin-bottom: 50px;*/
+    height: 5vh;
+    background-color: #E76631;
+}
+#square1{
+    top: 7vh;
+}
+#square2{
+    top:17vh;
+    background-color: var(--InactiveSquare);
+}
+#square3{
+    top: 27vh;
+    background-color: var(--InactiveSquare);
+}
+#square4{
+    top: 37vh;
+    background-color: var(--InactiveSquare);
+}
 
 
 
