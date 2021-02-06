@@ -188,14 +188,14 @@ nav a:hover{
     font-size: 4rem;
     margin-top: 1rem;
 }
+
+/*Page Scroll Indicator*/
 .scrollBar{
-    /*float: right;*/
     position: fixed;
     right: 5vw;
     top: 25vh;
     bottom: 25vh;
     z-index: 9999;
-    outline: 1px solid black;
 }
 .squares{
     /*height: 234;*/
@@ -204,26 +204,46 @@ nav a:hover{
 .square{
     width: 5vh;
     position: absolute;
-    /*margin-top: 50px;*/
-    /*margin-bottom: 50px;*/
     height: 5vh;
     background-color: #E76631;
+    transition: transform 400ms;
 }
 #square1{
     top: 7vh;
+    left: 50%;
+    transform: scale(1.25,1.25) translate(-40%,0vh);
+    width: 4vh;
+    height: 4vh;
 }
 #square2{
     top:17vh;
     background-color: var(--InactiveSquare);
+    width: 4vh;
+    height: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0vh);
 }
 #square3{
     top: 27vh;
     background-color: var(--InactiveSquare);
+    width: 4vh;
+    height: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0vh);
 }
 #square4{
     top: 37vh;
     background-color: var(--InactiveSquare);
+    width: 4vh;
+    height: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0vh);
 }
+
+.squares div:hover{
+    transform: scale(1.25,1.25) translate(-40%,0vh) !important;
+}
+
 
 
 

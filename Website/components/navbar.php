@@ -9,7 +9,7 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="#welcomeBlock">Home</a></li>
             <li><a href="#projectsBlock">Projects</a></li>
             <li><a href="#aboutBlock">About</a></li>
             <li><a href="#languageBlock">Languages</a></li>

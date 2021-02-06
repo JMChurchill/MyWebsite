@@ -16,10 +16,10 @@ include_once "components/footer.php";
         //scroll bar
         <div class="scrollBar">
             <div class="squares">
-                <div class="square" id="square1"></div>
-                <div class="square" id="square2"></div>
-                <div class="square" id="square3"></div>
-                <div class="square" id="square4"></div>
+                <a href="#welcomeBlock"><div class="square" id="square1"></div></a>
+                <a href="#projectsBlock"><div class="square" id="square2"></div></a>
+                <a href="#aboutBlock"><div class="square" id="square3"></div></a>
+                <a href="#languageBlock"><div class="square" id="square4"></div></a>
             </div>
 
         </div>
