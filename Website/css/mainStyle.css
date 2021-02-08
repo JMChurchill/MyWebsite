@@ -184,29 +184,49 @@ nav a:hover{
 .dark{
     width: 100%;
     height: 100%;
-    padding: 75px 1% 5% 5%;
+    padding: 75px 5% 75px 5%;
     /*padding-top: 75px;*/
     background-color: var(--background);
 }
 .lighter{
     width: 100%;
     height: 100%;
-    padding: 75px 1% 5% 5%;
-
+    /*padding: 75px 1% 5% 5%;*/
+    padding: 75px 5vw 75px 5vw;
     /*padding: 1% 5%;*/
     background-color: var(--backgroundLighter);
+}
+.rows{
+    outline: solid 1px green;
+    display: flex;
+
+}
+.columns{
+    outline: solid 1px green;
+    /*width: 50%;*/
+    /*position: absolute;*/
+    flex: 50%;
+    width: 50%;
+    padding: 1vh 2vw;
+}
+.columns h3{
+    color: white;
+}
+.columns p{
+    color: white;
 }
 .blockHeader{
     color: white;
     text-align: center;
     font-size: 4rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /*Page Scroll Indicator*/
 .scrollBar{
     position: fixed;
-    right: 5vw;
+    right: 3vw;
     top: 25vh;
     bottom: 25vh;
     z-index: 9999;
@@ -219,7 +239,7 @@ nav a:hover{
     width: 5vh;
     position: absolute;
     height: 5vh;
-    background-color: #E76631;
+    background-color: var(--contrast);
     transition: transform 400ms;
 }
 #square1{
@@ -259,7 +279,54 @@ nav a:hover{
 }
 
 
+/*progress bars*/
 
+.progressBars{
+    width: 100%;
+    min-height: 50px;
+    /*background-color: red;*/
+}
+.progressBars p{
+    margin: 10px;
+    font-weight: bold;
+}
+.progressBar{
+    height: 10px;
+    width: 100%;
+    background-color: var(--InactiveSquare);
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+.progressBarFill{
+    width: 0;
+    height: 100%;
+    background-color: var(--contrast);
+    border-radius: 10px;
+}
+.progressBars #cSharp{
+    width: 85%;
+}
+.progressBars #Java{
+    width: 80%;
+}
+.progressBars #html{
+    width: 75%;
+}
+.progressBars #css{
+    width: 70%;
+}
+.progressBars #js{
+    width: 60%;
+}
+.progressBars #php{
+    width: 40%;
+}
+.progressBars #python{
+    width: 30%;
+}
+.progressBars #cPlus{
+    width: 20%;
+}
 
 
 /*large screen*/
@@ -278,7 +345,6 @@ nav a:hover{
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
         font-size: 15px;
         color: white;
-
     }
 
     #logo {

@@ -43,6 +43,50 @@ include_once "components/footer.php";
             <div class="block" id="languageBlock">
                 <div class="lighter">
                     <h2 class="blockHeader">Languages</h2>
+                    <div class="rows">
+                        <div class="columns">
+                            <h3>Programing languages</h3>
+                            <div class="progressBars">
+                                <p>C#</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="cSharp"></div>
+                                </div>
+                                <p>Java</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="Java"></div>
+                                </div>
+                                <p>HTML</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="html"></div>
+                                </div>
+                                <p>CSS</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="css"></div>
+                                </div>
+                                <p>Javascript</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="js"></div>
+                                </div>
+                                <p>PHP</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="php"></div>
+                                </div>
+                                <p>Python</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="python"></div>
+                                </div>
+                                <p>C++</p>
+                                <div class="progressBar">
+                                    <div class="progressBarFill" id="cPlus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <p>This is my text</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 <!--        </div>-->
