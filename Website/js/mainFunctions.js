@@ -7,7 +7,7 @@ const square4 = document.getElementById("square4");
 
 //Page Scrolled Indicator
 window.addEventListener("scroll", () =>{
-    // console.log("scrolling down")
+    //console.log("scrolling down")
     //get total possible scrollable height
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
 
@@ -24,61 +24,93 @@ window.addEventListener("scroll", () =>{
 
     if(percentageScrolled >= 0){
         square1.style.backgroundColor = "#E76631";
-        square1.style.transform = "scale(1.2,1.2) translate(-40%,0vh)"
+        square1.style.transform = "scale(1.2,1.2) translate(-40%,0vh)";
 
         square2.style.backgroundColor = "var(--InactiveSquare)";
-        square2.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square2.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square3.style.backgroundColor = "var(--InactiveSquare)";
-        square3.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square3.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square4.style.backgroundColor = "var(--InactiveSquare)";
-        square4.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square4.style.transform = "scale(1,1) translate(-50%,0vh)";
     }
     if(percentageScrolled >= 25){
         square1.style.backgroundColor = "var(--InactiveSquare)";
-        square1.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square1.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square2.style.backgroundColor = "#E76631";
-        square2.style.transform = "scale(1.2,1.2) translate(-40%,0vh)"
+        square2.style.transform = "scale(1.2,1.2) translate(-40%,0vh)";
 
         square3.style.backgroundColor = "var(--InactiveSquare)";
         square3.style.transform = "scale(1,1) translate(-50%,0vh)"
 
         square4.style.backgroundColor = "var(--InactiveSquare)";
-        square4.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square4.style.transform = "scale(1,1) translate(-50%,0vh)";
     }
     if(percentageScrolled >= 50){
         square1.style.backgroundColor = "var(--InactiveSquare)";
         square1.style.transform = "scale(1,1) translate(-50%,0vh)"
 
         square2.style.backgroundColor = "var(--InactiveSquare)";
-        square2.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square2.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square3.style.backgroundColor = "#E76631";
-        square3.style.transform = "scale(1.2,1.2) translate(-40%,0vh)"
+        square3.style.transform = "scale(1.2,1.2) translate(-40%,0vh)";
 
         square4.style.backgroundColor = "var(--InactiveSquare)";
-        square4.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square4.style.transform = "scale(1,1) translate(-50%,0vh)";
     }
     if(percentageScrolled >= 75){
         square1.style.backgroundColor = "var(--InactiveSquare)";
-        square1.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square1.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square2.style.backgroundColor = "var(--InactiveSquare)";
-        square2.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square2.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square3.style.backgroundColor = "var(--InactiveSquare)";
-        square3.style.transform = "scale(1,1) translate(-50%,0vh)"
+        square3.style.transform = "scale(1,1) translate(-50%,0vh)";
 
         square4.style.backgroundColor = "#E76631";
-        square4.style.transform = "scale(1.2,1.2) translate(-40%,0vh)"
+        square4.style.transform = "scale(1.2,1.2) translate(-40%,0vh)";
     }
 
-    // console.log(scrollable);
-    //
-    // console.log(scrolled);
-    //
-    // console.log("percentage: " + percentageScrolled);
+    console.log(scrollable);
+
+    console.log(scrolled);
+
+    console.log("percentage: " + percentageScrolled);
 });
+
+
+// //carousel
+// const carouselSlide = document.querySelector('.carousel-items');
+// const carouselImages = document.querySelectorAll('.carousel-Item');
+//
+// //btns
+// const prevBtn = document.querySelector('#btnPrevious');
+// const nextBtn = document.querySelector('#btnNext');
+//
+// //Counter
+// let counter = 1;
+// const size = carouselImages[0].clientWidth;
+//
+// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//
+// //btn listeners
+//
+// nextBtn.addEventListener('click',()=>{
+//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
+//     counter++;
+//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     console.log('test next');
+// });
+//
+// prevBtn.addEventListener('click',()=>{
+//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
+//     counter--;
+//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     console.log('test prev');
+// });
+
 

@@ -279,6 +279,92 @@ nav a:hover{
 }
 
 
+/*carousel*/
+.carousel-container{
+    height: 75%;
+    width: 100%;
+    /*outline: green 1px solid;*/
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+.carousel-Items{
+    height: 100%;
+    width: 100%;
+    /*outline: green 1px solid;*/
+    display: flex;
+    /*padding: 0 50px;*/
+}
+.carousel-Item{
+    height: 100%;
+    background-color: white;
+}
+.backgroundImg{
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    outline: aqua 1px solid;
+    position: relative;
+}
+.carousel-Item .text{
+    /*width: 500px;*/
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--background);
+    color: white;
+    font-weight: bold;
+    border-top: solid 1px var(--contrast);
+}
+.carousel-Item .text h4{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#btnPreviousBox{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    /*left: 5%;*/
+    font-size: 40px;
+    color: white;
+    opacity: 0.75;
+    cursor: pointer;
+    background: black;
+    height: auto;
+    width: 45px;
+}
+#btnPrevious{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+#btnNextBox{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    right: 0;
+    font-size: 40px;
+    color: white;
+    opacity: 0.75;
+    cursor: pointer;
+    background: black;
+    height: auto;
+    width: 45px;
+}
+#btnNext{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+
+
 /*progress bars*/
 
 .progressBars{

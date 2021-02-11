@@ -33,6 +33,110 @@ include_once "components/footer.php";
             <div class="block" id="projectsBlock">
                 <div class="lighter">
                     <h2 class="blockHeader">Projects</h2>
+                    <div class="carousel-container">
+                        <!--    arrow BTNs-->
+                        <div class="arrowBox-left" id="btnPreviousBox">
+                            <i class="fas fa-arrow-left" id="btnPrevious"></i>
+                        </div>
+                        <div class="arrowBox-right" id="btnNextBox">
+                            <i class="fas fa-arrow-right" id="btnNext"></i>
+                        </div>
+                        <div class="carousel-items">
+
+                            <div class="carousel-Item" id="lastClone">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 5</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 1</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 2</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 3</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 4</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 5</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--      clones     -->
+                            <div class="carousel-Item" id="firstClone">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 1</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 2</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 3</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 4</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-Item">
+                                <div class="backgroundImg">
+                                    <div class="text">
+                                        <h4>Project 5</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    <button id="btnPrevious">Prev</button>-->
+<!--                    <button id="btnNext">Next</button>-->
+
                 </div>
             </div>
             <div class="block" id="aboutBlock">
@@ -93,6 +197,8 @@ include_once "components/footer.php";
 
 
         <script src="js/mainFunctions.js"></script>
+        <script src="js/carousel.js"></script>
+
 
 
     </body>
